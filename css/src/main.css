@@ -311,12 +311,12 @@ section.hero {
 
 section.hero > div {
     width: 50vw;
-    min-width: 550px;
     padding: 20px;
     background: rgba(255,255,255,.6);
     position: relative;
     margin-left: 20px;
     overflow:hidden;
+    box-sizing: border-box;
 }
 
 section.hero > div h1 {
@@ -360,6 +360,21 @@ section.hero > div p {
     -ms-transform: skew(5deg);
     transform: skew(5deg);
 }*/
+@media screen and (max-width: 500px) {
+    section.hero > div {
+        width: 90vw;
+        margin-right: 20px;
+    }
+    section.hero > div.slant {
+        clip-path: inherit;
+    }
+    section.hero > div h1 {
+        font-size: 2.5em;
+    }
+    .slant .button {
+        padding-right: 0;
+    }
+}
 
 /*
  * Featured Inventory Section
