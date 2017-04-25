@@ -2,7 +2,7 @@
   "name": "rvdemo_phoenix",
   "version": "1.0.0",
   "description": "HTML template for RVWS Demo Webiste",
-  "main": "index.html",
+  "main": "index.php",
   "directories": {
     "doc": "doc"
   },
