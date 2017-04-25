@@ -1,0 +1,26 @@
+{
+  "name": "rvdemo_phoenix",
+  "version": "1.0.0",
+  "description": "HTML template for RVWS Demo Webiste",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-postcss": "^0.8.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "cssnano": "^3.10.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "pixrem": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jason.wilson@rvwebservices.com",
+  "license": "All Rights Reserved"
+}
