@@ -149,7 +149,7 @@ header {
     margin: 0 15px;
     white-space: nowrap;
 }
-@media (hover:hover) {
+@media (focus:focus) {
     .menu-item > a:hover {
         border-bottom: 3px solid rgba(0, 68, 129, 1);
         padding-bottom: 5px;
@@ -209,7 +209,7 @@ header {
         justify-content: flex-start;
         max-height: 999px;
     }
-    @media(hover: hover) {
+    @media(focus: focus) {
         .menu-item:hover > .submenu {
 
             background: rgba(0, 68, 129, 1);
@@ -270,7 +270,7 @@ header {
         margin: 0;
         padding: 0;
     }
-    @media (hover:hover) {
+    @media (focus:focus) {
 
         .mainMenu:hover .menu-item:nth-child(n+2) {
             display: block;
@@ -527,10 +527,10 @@ section.browse-inventory div.search label input, section.browse-inventory div.se
         flex-flow: column nowrap;
     }
     section.browse-inventory div.browse {
-        flex: 1 0 100%;
+        flex: 1 0 auto;
     }
     section.browse-inventory div.search {
-        flex: 1 0 100%;
+        flex: 1 0 auto;
     }
 }
 @media screen and (max-width:450px) {
@@ -538,6 +538,20 @@ section.browse-inventory div.search label input, section.browse-inventory div.se
         width: 50%;
     }
 }
+/* Safari 10.1+ (which is the latest version of Safari at this time) */
+
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    section.browse-inventory{
+        display:block;
+    }
+    section.browse-inventory div.browse {
+        flex: 1 0 auto;
+    }
+    section.browse-inventory div.search {
+        flex: 1 0 auto;
+    }
+}}
 
 /*
  * CTA Section
@@ -567,13 +581,13 @@ section.ctas article .button {
         flex-flow: column wrap;
     }
     section.ctas article {
-        flex: 0 1 100%;
+        flex: 0 1 auto;
         min-height: 35vw;
     }
 }
 @media screen and (max-width: 550px) {
     section.ctas article {
-        flex: 0 1 100%;
+        flex: 0 1 auto;
         min-height: 50vw;
     }
 }
@@ -699,7 +713,7 @@ section.testimonial article .profile img {
     }
 
     section.testimonial article {
-        flex: 1 0 100%;
+        flex: 1 0 auto;
     }
 }
 
