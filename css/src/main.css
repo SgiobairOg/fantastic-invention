@@ -450,7 +450,14 @@ section.featured-inventory article p {
         overflow-x: hidden;
         flex-flow: column nowrap;
     }
+    section.featured-inventory > div article {
+        min-height: 50vw;
+    }
+    section.featured-inventory > div article:first-child {
+        margin-top: 2em;
+    }
 }
+
 
 /*
  * Browse Section
@@ -487,6 +494,7 @@ section.browse-inventory div.browse .rv-class {
     flex-flow: column nowrap;
     align-items: center;
 }
+
 
 section.browse-inventory div.browse .rv-class img {
     width: 80%;
@@ -525,7 +533,11 @@ section.browse-inventory div.search label input, section.browse-inventory div.se
         flex: 1 0 100%;
     }
 }
-
+@media screen and (max-width:450px) {
+    section.browse-inventory div.browse .rv-class {
+        width: 50%;
+    }
+}
 
 /*
  * CTA Section
@@ -556,7 +568,13 @@ section.ctas article .button {
     }
     section.ctas article {
         flex: 0 1 100%;
-        height: 35vw;
+        min-height: 35vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    section.ctas article {
+        flex: 0 1 100%;
+        min-height: 50vw;
     }
 }
 
@@ -894,7 +912,7 @@ footer .drape .logo-white {
     margin: 1em 0;
 }
 .button i.fa {
-    padding: 0 2em;
+    padding: 0 1em;
 }
 
 /*
