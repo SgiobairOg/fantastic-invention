@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "grunt": "^1.0.1",
-    "grunt-postcss": "^0.8.0"
+    "grunt-postcss": "^0.8.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
@@ -19,8 +20,11 @@
     "pixrem": "^3.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "jason.wilson@rvwebservices.com",
-  "license": "All Rights Reserved"
+  "license": "All Rights Reserved",
+  "snyk": true
 }
